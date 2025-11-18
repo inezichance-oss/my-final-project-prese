@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Online Doctor Chat</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="data/users.js"></script>
+</head>
+<body>
+<header class="site-header"><div class="wrap"><h1>Online Doctor Chat</h1>
+<nav><a href="index.html">Home</a><a href="appointment.html">Book Appointment</a><a href="chat.html">Online Doctor</a><a href="doctors.html">Doctors</a><a href="login.html">Login</a></nav>
+</div></header>
+
+<main class="wrap chat-page">
+  <section class="chat-card">
+    <h2>Chat with a doctor</h2>
+    <div id="chatArea" class="chat-area"></div>
+
+    <div class="chat-controls">
+      <input id="chatInput" placeholder="Describe your symptoms or ask a question">
+      <button id="sendBtn" class="btn">Send</button>
+    </div>
+
+    <p class="muted">Note: This chat is a front-end demo. For emergencies call local emergency services.</p>
+  </section>
+
+  <aside class="doctor-dashboard" id="doctorDashboard" style="display:none;">
+    <h3>Doctor Dashboard (simulate logged-in doctor)</h3>
+    <div id="incoming"></div>
+  </aside>
+</main>
+
+<script src="assets/js/chat.js"></script>
+</body>
+</html>

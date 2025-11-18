@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Book Appointment</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="data/hospitals.js"></script>
+<script src="data/insurances.js"></script>
+<script src="data/doctors.js"></script>
+</head>
+<body>
+<header class="site-header"><div class="wrap"><h1>Book Appointment</h1>
+<nav><a href="index.html">Home</a><a href="appointment.html">Book Appointment</a><a href="chat.html">Online Doctor</a><a href="doctors.html">Doctors</a><a href="login.html">Login</a></nav>
+</div></header>
+
+<main class="wrap">
+  <section class="form-card">
+    <form id="appointmentForm">
+      <h2>Book an Appointment</h2>
+      <label for="name">Full name</label>
+      <input id="name" required>
+
+      <label for="phone">Phone number</label>
+      <input id="phone" required>
+
+      <label for="hospitalSelect">Hospital</label>
+      <select id="hospitalSelect" required></select>
+
+      <label for="department">Department</label>
+      <select id="department">
+        <option>General Medicine</option>
+        <option>Pediatrics</option>
+        <option>Gynecology</option>
+        <option>Cardiology</option>
+        <option>Orthopedics</option>
+        <option>Dental</option>
+      </select>
+
+      <label for="doctorSelect">Doctor</label>
+      <select id="doctorSelect">
+        <option value="">-- Any --</option>
+      </select>
+
+      <label for="insuranceSelect">Insurance</label>
+      <select id="insuranceSelect"></select>
+
+      <label for="date">Date</label>
+      <input id="date" type="date" required>
+
+      <label for="time">Time</label>
+      <input id="time" type="time" required>
+
+      <button class="btn" type="submit">Confirm Appointment</button>
+    </form>
+  </section>
+
+  <section class="appointments-card" id="myAppointments">
+    <h3>Your Appointments</h3>
+    <div id="appointmentsList"></div>
+  </section>
+</main>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
